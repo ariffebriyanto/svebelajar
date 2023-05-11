@@ -1,4 +1,20 @@
-<script lang="ts">
+<script>
+    import { Router, Route } from 'svelte-routing'
+    import Home from './pages/Home.svelte'
+    import Details from './pages/Details.svelte'
+	import Products from './pages/Products.svelte'
+</script>
+
+<Router>
+    <Route component={Home} />
+    <Route path="/Details" component={Details} />
+    <Route path="/product/:id" let:params>
+        <Products id={params.id} />
+    </Route>
+</Router>
+
+
+<!-- <script lang="ts">
 	let name: string = 'world';
 </script>
 
@@ -25,4 +41,4 @@
 			max-width: none;
 		}
 	}
-</style>
+</style> -->

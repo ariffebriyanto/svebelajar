@@ -20,7 +20,7 @@ TypeScript, SCSS, Babel, Autoprefixer, and HMR.
 
 ### Installation
 
-Pull the template files into the current working directory with [`degit`](https://github.com/Rich-Harris/degit) and
+Pull the template files into the current working directory with [`svebelajar`](https://github.com/ariffebriyanto/svebelajar.git) and
 then install dependencies.
 
 ```bash
