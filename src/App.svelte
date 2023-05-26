@@ -3,11 +3,13 @@
     import Home from './pages/Home.svelte'
     import Details from './pages/Details.svelte'
 	import Products from './pages/Products.svelte'
+	import Api from './pages/api.svelte'
 </script>
 
 <Router>
     <Route component={Home} />
     <Route path="/Details" component={Details} />
+	<Route path="/Api" component={Api} />
     <Route path="/product/:id" let:params>
         <Products id={params.id} />
     </Route>
