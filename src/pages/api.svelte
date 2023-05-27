@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-//display data from api
+
     let posts = [];
 
     onMount(() => {
