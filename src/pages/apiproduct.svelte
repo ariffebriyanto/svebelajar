@@ -5,12 +5,12 @@
 
 onMount(() => {
     fetch("https://dummyjson.com/products")
-    .then(res => res.json())
-    .then(console.log)
+    .then((response) => response.json())
+    .then((result) => (posts = result.products));
     
 });
 const postData = {
-        title: ""
+        title1: ''
         
     };
 function formHandler(event) {
@@ -20,7 +20,7 @@ function formHandler(event) {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
-    title: 'BMW Pencil r',
+    title: title1,
     /* other product data */
   })
 })
